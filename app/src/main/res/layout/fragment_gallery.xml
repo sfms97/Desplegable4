@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintOcio"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylelime_100">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintGroup280"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3pxv"
+            android:layout_width="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@+id/imagePngkey1"
+                android:layout_height="@dimen/_76pxh"
+                android:layout_marginEnd="@dimen/_8pxh"
+                android:layout_width="@dimen/_73pxh"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.66"
+                app:layout_constraintStart_toEndOf="@+id/imageMenu"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/img_pngkey2"/>
+            <ImageView android:id="@+id/imageMenu"
+                android:layout_height="@dimen/_61pxh"
+                android:layout_marginBottom="@dimen/_7pxv"
+                android:layout_marginEnd="@dimen/_161pxh"
+                android:layout_marginStart="@dimen/_14pxh"
+                android:layout_marginTop="@dimen/_8pxv"
+                android:layout_width="@dimen/_64pxh"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imagePngkey1"
+                app:layout_constraintHorizontal_bias="0.04"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/img_menu"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView android:ellipsize="end" android:gravity="center"
+            android:id="@+id/txtOcioCercano"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_46pxh"
+            android:layout_marginStart="@dimen/_46pxh"
+            android:layout_width="0dp" android:singleLine="true"
+            android:text="@{ocioVM.ocioModel.txtOcioCercano}"
+            app:layout_constraintEnd_toEndOf="@+id/constraintGroup280"
+            app:layout_constraintStart_toStartOf="@+id/constraintGroup280"
+            app:layout_constraintTop_toBottomOf="@+id/constraintGroup280"
+            style="@style/txtSansitaSwashedromanregular36" tools:text="@string/lbl_ocio_cercano"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintGroup279"
+            style="@style/groupStyleorange_500_cc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/imageGroup"
+                android:layout_width="@dimen/_34pxh"
+                android:layout_height="@dimen/_23pxh"
+                android:layout_marginStart="@dimen/_33pxh"
+                android:layout_marginTop="@dimen/_2pxv"
+                android:layout_marginEnd="@dimen/_76pxh"
+                android:layout_marginBottom="@dimen/_7pxv"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_group_8"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageGroup1"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageGroup1" />
+
+            <ImageView
+                android:id="@+id/imageGroup1"
+                android:layout_width="@dimen/_43pxh"
+                android:layout_height="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_marginEnd="@dimen/_64pxh"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_group_9"
+                app:layout_constraintBottom_toBottomOf="@+id/imageGroup"
+                app:layout_constraintEnd_toStartOf="@+id/imageGroup2"
+                app:layout_constraintHorizontal_bias="0.28"
+                app:layout_constraintStart_toEndOf="@+id/imageGroup"
+                app:layout_constraintTop_toTopOf="@+id/imageGroup2" />
+
+            <ImageView
+                android:id="@+id/imageGroup2"
+                android:layout_width="@dimen/_43pxh"
+                android:layout_height="@dimen/_24pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_marginEnd="@dimen/_27pxh"
+                android:layout_marginBottom="@dimen/_1pxv"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_group_10"
+                app:layout_constraintBottom_toBottomOf="@+id/imageGroup1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.36"
+                app:layout_constraintStart_toEndOf="@+id/imageGroup1"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageRectangle2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_26pxh"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/_30pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_rectangle2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.04"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtBuscar"
+            app:layout_constraintWidth_percent="0.825" />
+
+        <ImageView android:id="@+id/imageGroup3"
+            android:layout_height="@dimen/_13pxh"
+            android:layout_marginBottom="@dimen/_6pxv"
+            android:layout_marginEnd="@dimen/_11pxh"
+            android:layout_marginStart="@dimen/_107pxh"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_width="@dimen/_14pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_group_7"
+            app:layout_constraintBottom_toBottomOf="@+id/imageRectangle2"
+            app:layout_constraintEnd_toEndOf="@+id/imageRectangle2"
+            app:layout_constraintHorizontal_bias="0.65"
+            app:layout_constraintStart_toEndOf="@+id/txtBuscar" app:layout_constraintTop_toTopOf="@+id/imageRectangle2"/>
+        <TextView android:ellipsize="end" android:id="@+id/txtBuscar"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_2pxv"
+            android:layout_marginStart="@dimen/_12pxh"
+            android:layout_marginTop="@dimen/_6pxv"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:text="@{ocioVM.ocioModel.txtBuscar}"
+            app:layout_constraintBottom_toBottomOf="@+id/imageGroup3"
+            app:layout_constraintEnd_toStartOf="@+id/imageGroup3"
+            app:layout_constraintHorizontal_bias="0.12"
+            app:layout_constraintStart_toStartOf="@+id/imageRectangle2"
+            app:layout_constraintTop_toBottomOf="@+id/txtOcioCercano"
+            style="@style/txtSansitaSwashedromanregular18_1" tools:text="@string/lbl_buscar"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

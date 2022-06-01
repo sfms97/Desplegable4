@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintCalendario"
+        style="@style/groupStylelime_100"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintGroup302"
+            android:layout_width="410dp"
+            android:layout_height="103dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imagePngkey1"
+                android:layout_width="102dp"
+                android:layout_height="89dp"
+                android:layout_marginEnd="4dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/imageMenu"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/img_pngkey2" />
+
+            <ImageView
+                android:id="@+id/imageMenu"
+                android:layout_width="@dimen/_64pxh"
+                android:layout_height="@dimen/_61pxh"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/img_menu" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/txtCalendario"
+            style="@style/txtSansitaSwashedromanregular36"
+            android:layout_width="293dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="92dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@{calendarioVM.calendarioModel.txtCalendario}"
+            app:layout_constraintBottom_toTopOf="@+id/viewRectangle9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Calendario" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintGroup289"
+            style="@style/groupStyleorange_500_e5"
+            android:layout_width="411dp"
+            android:layout_height="57dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"><![CDATA[
+            app:layout_constraintTop_toBottomOf="@+id/viewRectangle9"
+            app:layout_constraintVertical_bias="1.0">
+
+
+
+
+
+            ]]>
+
+            <ImageView
+                android:id="@+id/imageGroup"
+                android:layout_width="57dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="4dp"
+                android:clickable="false"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_group_13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.733"
+                app:layout_constraintStart_toEndOf="@+id/imageGroup2"
+                app:layout_constraintTop_toTopOf="@+id/imageGroup2" />
+
+            <ImageView
+                android:id="@+id/imageGroup1"
+                android:layout_width="43dp"
+                android:layout_height="29dp"
+                android:layout_marginTop="4dp"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_group_11"
+                app:layout_constraintEnd_toStartOf="@+id/imageGroup2"
+                app:layout_constraintHorizontal_bias="0.306"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageGroup2" />
+
+            <ImageView
+                android:id="@+id/imageGroup2"
+                android:layout_width="56dp"
+                android:layout_height="30dp"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_group_12"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.518" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <![CDATA[
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="599dp" />
+
+        ]]>
+
+        <View
+            android:id="@+id/viewRectangle9"
+            android:layout_width="@dimen/_141pxh"
+            android:layout_height="@dimen/_33pxv"
+            android:layout_marginBottom="328dp"
+            android:background="@drawable/rectangle_bg_amber_700_radius_30"
+            android:clickable="true"
+            app:layout_constraintBottom_toTopOf="@+id/constraintGroup289"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtAadirEvento"
+            style="@style/txtSansitaSwashedromanregular20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@{calendarioVM.calendarioModel.txtAadirEvento}"
+            app:layout_constraintBottom_toBottomOf="@+id/viewRectangle9"
+            app:layout_constraintEnd_toEndOf="@+id/viewRectangle9"
+            app:layout_constraintStart_toStartOf="@+id/viewRectangle9"
+            app:layout_constraintTop_toTopOf="@+id/viewRectangle9"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
